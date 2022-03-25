@@ -20,6 +20,7 @@ const updateCurrentPosition = (direction, position) => {
         default:
             console.log('Error: Invalid entree');
     }
+    return position;
 }
 
 // const nextMove = () => {
