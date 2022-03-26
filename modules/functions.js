@@ -1,8 +1,8 @@
-
-const printBoard = (currentField) => {
-    currentField.print();
-}
-
+//Update current position based on player input
+//u = up
+//d = down
+//l = left
+//r = right
 const updateCurrentPosition = (direction, position) => {
     switch (direction) {
         case 'u':
@@ -23,15 +23,4 @@ const updateCurrentPosition = (direction, position) => {
     return position;
 }
 
-// const nextMove = () => {
-//     process.stdout.write('Which way do you want to move? ');
-//     process.stdin.on('data', updateBoard);
-// } 
-
-// const updateBoard = (userInput) => {
-//     let input = userInput.toString().trim();
-//     process.stdout.write(input);
-//     process.exit();
-// }
-
-module.exports = { printBoard, updateCurrentPosition };
+module.exports = { updateCurrentPosition };
